@@ -1,1 +1,1 @@
-# CAKE
+# CAKE, our first web project.
