@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Auth from "./components/Auth";
+import { Routes, Route, HashRouter } from "react-router-dom";
+import Home from "./routes/Home";
+import Auth from "./routes/Auth";
+import AppRouter from "./components/Router";
 
 function App() {
-  return <Auth />;
+  return <AppRouter />;
 }
-
 export default App;

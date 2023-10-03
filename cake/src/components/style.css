@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+
+/* Home */
+
+.container {
+  justify-content: center;
+}
+.container h3, h5,p{
+  font-family: 'Orbit', sans-serif;
+  text-align: center;
+}
+.portfolio h3, h5,p{
+  color: #ffffff;
+}
+
+.container h3{
+  font-size: 50px;
+  margin: 80px;
+}
+
+.main {
+  margin-left: 20%;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.portfolio {
+  background-color: rgb(133, 180, 255);
+  margin: 0px;
+  max-width: 300px;
+
+}
+
+
+
+
+
+
+
+/* Auth */
+
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.authContainer h1 {
+  font-size: 80px;
+  margin-top: 20%;
+  margin-bottom: 70px;
+}
+  
+  .authBtns {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .authBtn {
+    flex-direction: row;
+    cursor: pointer;
+    border-radius: 20px;
+    border:solid thin green;
+    padding: 10px;
+    margin: 20px;
+    font-size:14px;
+    text-align: center;
+    width: 200px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  /* AuthForm */
+  
+  .authInput {
+    max-width: 320px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .authSubmit {
+    text-align: center;
+    background: #04aaff;
+    color: white;
+    margin-top: 10;
+    cursor: pointer;
+  }
+  
+  .authError {
+    color: tomato;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .authSwitch {
+    color: #04aaff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  .font ,.authBtn{
+    font-family: 'Playfair Display', serif;
+}

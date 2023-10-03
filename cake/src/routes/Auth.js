@@ -1,25 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCakeCandles } from "@fortawesome/fontawesome-free";
 import { faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import "../components/style.css";
+import { Link } from "react-router-dom";
 
 const Auth = () => {
   return (
     <div className="authContainer">
-      <FontAwesomeIcon
+      <h1 className="font">CAKE</h1>
+      {/* <FontAwesomeIcon
         icon={faCakeCandles}
         color={"#04AAFF"}
-        size="3x"
+        size="5x"
         style={{ marginBottom: 30 }}
-      />
+      /> */}
 
       <div className="authBtns">
-        <button name="google">
+        <button name="google" className="authBtn">
           Continue with Google <FontAwesomeIcon icon={faGoogle} />
         </button>
-        <button name="github">
+        <button name="github" className="authBtn">
           Continue with Github <FontAwesomeIcon icon={faGithub} />
         </button>
+      </div>
+      <div>
+        <Link to={{ pathname: "/home" }}>
+          <button>Go to Home</button>
+        </Link>{" "}
       </div>
     </div>
   );
